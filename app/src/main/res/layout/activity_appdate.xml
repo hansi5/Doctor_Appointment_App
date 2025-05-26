@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="30dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center|clip_horizontal"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Appointment Date and Time"
+                android:textAlignment="center"
+                android:textColor="#143D60"
+                android:textSize="30sp"
+                android:textStyle="italic|bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select An Appointment Date:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="left"/>
+
+            <DatePicker
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:id="@+id/datePicker_date"
+                android:calendarTextColor="@color/black"
+                android:calendarViewShown="false"
+                android:datePickerMode="calendar"
+                android:layout_width="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_height="390dp"
+                android:fontFamily="sans-serif"
+                android:headerBackground="#71BBB2"
+                android:textStyle="bold"
+                android:theme="@style/ShapeAppearance.Material3.SmallComponent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select An Appointment Time:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_spinner" />
+
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="179dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#143D60"
+                android:padding="10dp"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back8"
+        android:layout_marginVertical="30dp"
+        android:backgroundTint="#143D60"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+</ScrollView>

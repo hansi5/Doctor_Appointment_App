@@ -1,0 +1,30 @@
+{
+  "hospitals": [
+    {
+      "name": "City Hospital",
+      "causes": [
+        {
+          "name": "Fever",
+          "doctors": ["Dr. John", "Dr. Smith"]
+        },
+        {
+          "name": "Cold",
+          "doctors": ["Dr. Alex", "Dr. Lisa"]
+        }
+      ]
+    },
+    {
+      "name": "Green Valley Hospital",
+      "causes": [
+        {
+          "name": "Headache",
+          "doctors": ["Dr. Martin", "Dr. Kevin"]
+        },
+        {
+          "name": "Back Pain",
+          "doctors": ["Dr. Rachel", "Dr. Steve"]
+        }
+      ]
+    }
+  ]
+}
