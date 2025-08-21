@@ -111,266 +111,239 @@ public class MainActivity extends AppCompatActivity {
         }
         db = openOrCreateDatabase("db", MODE_PRIVATE, null);
 
-    }
-
-
-
-}
+//    }
+//}
 
 //        db.execSQL("delete from Causes ");
 //        db.execSQL("delete from doctor");
 //        db.execSQL("delete from time_table");
-//
-//        db.execSQL("create table if not exists causes (c_name varchar(250), specialists varchar(250))");
-//        db.execSQL("INSERT INTO causes VALUES" +
-//                "('Burning or stinging', 'Dermatologist')," +
-//                "('Cracked skin', 'Dermatologist')," +
-//                "('Dull ache (teeth)', 'Dentist')," +
-//                "('Sharp pain (teeth)', 'Dentist')," +
-//                "('Swelling in gums (teeth)', 'Dentist')," +
-//                "('Throbbing (tooth)', 'Dentist')," +
-//                "('Sensitivity (tooth)', 'Dentist')," +
-//                "('Chest pain', 'Cardiologist')," +
-//                "('Shortness of breath', 'Pulmonologist')," +
-//                "('Discomfort in breathing', 'Pulmonologist')," +
-//                "('Numbness', 'Neurologist')," +
-//                "('Loss of feeling', 'Neurologist')," +
-//                "('Electric shock sensations', 'Neurologist')," +
-//                "('Weakness', 'General Physician')," +
-//                "('Involuntary movements', 'Neurologist')," +
-//                "('Slurred speech', 'Neurologist')," +
-//                "('Memory loss', 'Neurologist')," +
-//                "('Sleep problems', 'Psychiatrist')," +
-//                "('Door blurring', 'Ophthalmologist')," +
-//                "('Blurry nearby objects', 'Ophthalmologist')," +
-//                "('Double vision', 'Ophthalmologist')," +
-//                "('Fading of colors', 'Ophthalmologist')," +
-//                "('Dim vision', 'Ophthalmologist')," +
-//                "('Yellowing of skin and eyes', 'Hepatologist')," +
-//                "('Abdominal pain', 'Gastroenterologist')," +
-//                "('Stomach pain', 'Gastroenterologist')," +
-//                "('Changes in stool and urine color', 'Gastroenterologist')," +
-//                "('Increased thirst', 'Endocrinologist')," +
-//                "('Frequent urination', 'Urologist')," +
-//                "('Extreme hunger', 'Endocrinologist')," +
-//                "('Running nose', 'ENT Specialist')," +
-//                "('Nausea', 'General Physician')," +
-//                "('Dizziness', 'Neurologist')," +
-//                "('Muscle aches', 'Rheumatologist')," +
-//                "('Fatigue', 'General Physician')," +
-//                "('Cough', 'Pulmonologist')," +
-//                "('Headache', 'Neurologist')," +
-//                "('Sneezing', 'ENT Specialist')," +
-//                "('Chills', 'General Physician')," +
-//                "('Diarrhea', 'Gastroenterologist')," +
-//                "('Sore throat', 'ENT Specialist')," +
-//                "('Itching', 'Dermatologist')," +
-//                "('Redness', 'Dermatologist')," +
-//                "('Rash', 'Dermatologist')," +
-//                "('Swelling', 'General Physician')," +
-//                "('Bumps or blisters', 'Dermatologist')," +
-//                "('Fever', 'General Physician')," +
-//                "('Joint pain', 'Rheumatologist')," +
-//                "('Weight loss', 'Endocrinologist')," +
-//                "('Persistent sadness', 'Psychiatrist')," +
-//                "('Guilt', 'Psychiatrist')," +
-//                "('Loss of interest', 'Psychiatrist')," +
-//                "('Changes in sleep', 'Psychiatrist')," +
-//                "('Unusual sleep', 'Psychiatrist')," +
-//                "('Burning and stinging', 'Dermatologist')," +
-//                "('Climbed vision', 'Ophthalmologist')");
-//        Toast.makeText(getApplicationContext(), "Inserted", Toast.LENGTH_LONG).show();
-//
-//
-//        db = openOrCreateDatabase("db", MODE_PRIVATE, null);
-//        db.execSQL("create table if not exists doctor (d_name varchar(250), hospital varchar(255), specialists varchar(250))");
-//        db.execSQL("INSERT INTO doctor VALUES" +
-//                "('Shifa Hospital', 'Dr.ARUN', 'Dermatologist')," +
-//                "('Shifa Hospital', 'Dr.Surya', 'Dentist')," +
-//                "('Shifa Hospital', 'Dr.Rajesh', 'Cardiologist')," +
-//                "('Shifa Hospital', 'Dr.Yusuf', 'Neurologist')," +
-//                "('Shifa Hospital', 'Dr.Anitha', 'Dentist')," +
-//                "('Shifa Hospital', 'Dr.Reddy', 'Psychiatrist')," +
-//                "('Shifa Hospital', 'Dr.Imthiyas', 'Opthamologist')," +
-//                "('Shifa Hospital', 'Dr.Ramya', 'Urologist')," +
-//                "('Shifa Hospital', 'Dr.Priya', 'General Physician')," +
-//                "('Shifa Hospital', 'Dr.Rekha', 'ENT Specialist')," +
-//                "('Shifa Hospital', 'Dr.Punitha', 'General Physician')," +
-//                "('Shifa Hospital', 'Dr.Abishek', 'ENT Specialist')," +
-//                "('Shifa Hospital', 'Dr.Suga', 'Endocrinologist')," +
-//                "('Shifa Hospital', 'Dr.August D', 'Dermatologist')," +
-//                "('Shifa Hospital', 'Dr.Inshaaf', 'General Physician')," +
-//                "('Shifa Hospital', 'Dr.Sameer', 'Opthamologist')," +
-//                "('Shifa Hospital', 'Dr.Gopal', 'Gastroenterologist')," +
-//                "('Shifa Hospital', 'Dr.Vaishalini', 'Cardiologist')," +
-//                "('Shifa Hospital', 'Dr.Nithya', 'Dentist')," +
-//                "('Shifa Hospital', 'Dr.Barakath', 'Pulmonologist')," +
-//                "('Lifeline Hospital', 'Dr.Keerthi', 'Dentist')," +
-//                "('Lifeline Hospital', 'Dr.Roshan', 'Psychiatrist')," +
-//                "('Lifeline Hospital', 'Dr.Harini', 'Cardiologist')," +
-//                "('Lifeline Hospital', 'Dr.Sarfraz', 'Urologist')," +
-//                "('Lifeline Hospital', 'Dr.Azees', 'Neurologist')," +
-//                "('Lifeline Hospital', 'Dr.Ishaq', 'Dermatologist')," +
-//                "('Lifeline Hospital', 'Dr.Sushmitha', 'ENT Specialist')," +
-//                "('Lifeline Hospital', 'Dr.Sowmiya', 'General Physician')," +
-//                "('Lifeline Hospital', 'Dr.Kavitha', 'Pulmonologist')," +
-//                "('Lifeline Hospital', 'Dr.Karthika', 'Dentist')," +
-//                "('Lifeline Hospital', 'Dr.IshaPrathan', 'Endocrinologist')," +
-//                "('Lifeline Hospital', 'Dr.Safa', 'Psychiatrist')," +
-//                "('Lifeline Hospital', 'Dr.Sathiyan', 'Opthamologist')," +
-//                "('Lifeline Hospital', 'Dr.Nazeer', 'Rheumatologist')," +
-//                "('Lifeline Hospital', 'Dr.Asokan', 'General Physician')," +
-//                "('Lifeline Hospital', 'Dr.Abishek', 'Neurologist')," +
-//                "('Lifeline Hospital', 'Dr.Indhu', 'Dermatologist')," +
-//                "('Lifeline Hospital', 'Dr.Gopal', 'Dentist')," +
-//                "('Lifeline Hospital', 'Dr.Yusuf', 'Cardiologist')," +
-//                "('Lifeline Hospital', 'Dr.IshaPrathan', 'ENT Specialist')," +
-//                "('Lifeline Hospital', 'Dr.Santhosh', 'Urologist')," +
-//                "('Health Harbor', 'Dr.Nivetha', 'Psychiatrist')," +
-//                "('Health Harbor', 'Dr.ARUN', 'Cardiologist')," +
-//                "('Health Harbor', 'Dr.Surya', 'Dermatologist')," +
-//                "('Health Harbor', 'Dr.Rajesh', 'Dentist')," +
-//                "('Health Harbor', 'Dr.Yusuf', 'Opthamologist')," +
-//                "('Health Harbor', 'Dr.Anitha', 'Neurologist')," +
-//                "('Health Harbor', 'Dr.Reddy', 'Dentist')," +
-//                "('Health Harbor', 'Dr.Imthiyas', 'General Physician')," +
-//                "('Health Harbor', 'Dr.Ramya', 'ENT Specialist')," +
-//                "('Health Harbor', 'Dr.Priya', 'Urologist')," +
-//                "('Health Harbor', 'Dr.Rekha', 'Endocrinologist')," +
-//                "('Health Harbor', 'Dr.Punitha', 'Gastroenterologist')," +
-//                "('Health Harbor', 'Dr.Abishek', 'Neurologist')," +
-//                "('Health Harbor', 'Dr.Naseefa', 'Psychiatrist')," +
-//                "('Health Harbor', 'Dr.Suga', 'General Physician')," +
-//                "('Health Harbor', 'Dr.August D', 'Dermatologist')," +
-//                "('Health Harbor', 'Dr.Inshaaf', 'Cardiologist')," +
-//                "('Health Harbor', 'Dr.Sameer', 'ENT Specialist')," +
-//                "('Health Harbor', 'Dr.Gopal', 'Pulmonologist')," +
-//                "('Health Harbor', 'Dr.Vaishalini', 'Rheumatologist')," +
-//                "('Healing Hub', 'Dr.Nithya', 'Cardiologist')," +
-//                "('Healing Hub', 'Dr.Barakath', 'ENT Specialist')," +
-//                "('Healing Hub', 'Dr.Keerthi', 'Neurologist')," +
-//                "('Healing Hub', 'Dr.Harini', 'Neurologist')," +
-//                "('Healing Hub', 'Dr.Sarfraz', 'General Physician')," +
-//                "('Healing Hub', 'Dr.Azees', 'Dermatologist')," +
-//                "('Healing Hub', 'Dr.Ishaq', 'Cardiologist')," +
-//                "('Healing Hub', 'Dr.Sushmitha', 'Dentist')," +
-//                "('Healing Hub', 'Dr.Shalini', 'Rheumatologist')," +
-//                "('Healing Hub', 'Dr.Jimin', 'General Physician')," +
-//                "('Healing Hub', 'Dr.Ramachandran', 'Dermatologist')," +
-//                "('Healing Hub', 'Dr.Ezhil', 'Dentist')," +
-//                "('Healing Hub', 'Dr.Shyamala', 'Pulmonologist')," +
-//                "('Healing Hub', 'Dr.Sujatha', 'Opthamologist')," +
-//                "('Healing Hub', 'Dr.Sowmiya', 'Endocrinologist')," +
-//                "('Healing Hub', 'Dr.Kavitha', 'ENT Specialist')," +
-//                "('Healing Hub', 'Dr.Karthika', 'Rheumatologist')," +
-//                "('Healing Hub', 'Dr.Safa', 'Pulmonologist')," +
-//                "('Healing Hub', 'Dr.Sathiyan', 'Gastroenterologist')," +
-//                "('Healing Hub', 'Dr.Nazeer', 'Opthamologist')");
-//        Toast.makeText(getApplicationContext(), "Inserted", Toast.LENGTH_LONG).show();
-//
-//
-//        db.execSQL("CREATE TABLE IF NOT EXISTS time_table (specialist varchar, time_slot varchar)");
-//        db.execSQL("INSERT INTO time_table (specialist, time_slot) VALUES" +
-//                "('Cardiologist', '9:00 AM')," +
-//                "('Cardiologist', '10:30 AM')," +
-//                "('Cardiologist', '11:30 AM')," +
-//                "('Cardiologist', '2:00 PM')," +
-//                "('Cardiologist', '3:30 PM')," +
-//                "('Cardiologist', '5:00 PM')," +
-//                "('Neurologist', '9:00 AM')," +
-//                "('Neurologist', '10:30 AM')," +
-//                "('Neurologist', '11:30 AM')," +
-//                "('Neurologist', '2:00 PM')," +
-//                "('Neurologist', '3:30 PM')," +
-//                "('Neurologist', '5:00 PM')," +
-//                "('Endocrinologist', '9:00 AM')," +
-//                "('Endocrinologist', '10:30 AM')," +
-//                "('Endocrinologist', '11:30 AM')," +
-//                "('Endocrinologist', '2:00 PM')," +
-//                "('Endocrinologist', '3:30 PM')," +
-//                "('Endocrinologist', '5:00 PM')," +
-//                "('Pulmonologist', '9:00 AM')," +
-//                "('Pulmonologist', '10:30 AM')," +
-//                "('Pulmonologist', '11:30 AM')," +
-//                "('Pulmonologist', '2:00 PM')," +
-//                "('Pulmonologist', '3:30 PM')," +
-//                "('Pulmonologist', '5:00 PM')," +
-//                "('Dentist', '10:00 AM')," +
-//                "('Dentist', '11:00 AM')," +
-//                "('Dentist', '3:00 PM')," +
-//                "('Dentist', '4:00 PM')," +
-//                "('Dentist', '6:30 PM')," +
-//                "('Dermatologist', '10:00 AM')," +
-//                "('Dermatologist', '11:00 AM')," +
-//                "('Dermatologist', '3:00 PM')," +
-//                "('Dermatologist', '4:00 PM')," +
-//                "('Dermatologist', '6:30 PM')," +
-//                "('Opthamologist', '10:00 AM')," +
-//                "('Opthamologist', '11:00 AM')," +
-//                "('Opthamologist', '3:00 PM')," +
-//                "('Opthamologist', '4:00 PM')," +
-//                "('Opthamologist', '6:30 PM')," +
-//                "('General Physician', '9:00 AM')," +
-//                "('General Physician', '10:30 AM')," +
-//                "('General Physician', '1:00 PM')," +
-//                "('General Physician', '2:30 PM')," +
-//                "('General Physician', '4:00 PM')," +
-//                "('General Physician', '6:00 PM')," +
-//                "('ENT Speacialist', '9:00 AM')," +
-//                "('ENT Speacialist', '10:30 AM')," +
-//                "('ENT Speacialist', '1:00 PM')," +
-//                "('ENT Speacialist', '2:30 PM')," +
-//                "('ENT Speacialist', '4:00 PM')," +
-//                "('ENT Speacialist', '6:00 PM')," +
-//                "('Psychiatrist', '10:00 AM')," +
-//                "('Psychiatrist', '11:30 AM')," +
-//                "('Psychiatrist', '2:00 PM')," +
-//                "('Psychiatrist', '3:30 PM')," +
-//                "('Psychiatrist', '5:30 PM')," +
-//                "('Rheumatologist', '10:00 AM')," +
-//                "('Rheumatologist', '11:30 AM')," +
-//                "('Rheumatologist', '2:00 PM')," +
-//                "('Rheumatologist', '3:30 PM')," +
-//                "('Rheumatologist', '5:30 PM')," +
-//                "('Gastroenterologist', '8:30 AM')," +
-//                "('Gastroenterologist', '9:45 AM')," +
-//                "('Gastroenterologist', '11:00 AM')," +
-//                "('Gastroenterologist', '1:30 PM')," +
-//                "('Gastroenterologist', '3:00 PM')," +
-//                "('Gastroenterologist', '5:00 PM')," +
-//                "('Urologist', '8:30 AM')," +
-//                "('Urologist', '9:45 AM')," +
-//                "('Urologist', '11:00 AM')," +
-//                "('Urologist', '1:30 PM')," +
-//                "('Urologist', '3:00 PM')," +
-//                "('Urologist', '5:00 PM')");
 
-//        Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show();
+        db.execSQL("create table if not exists causes (c_name varchar(250), specialists varchar(250))");
+        db.execSQL("INSERT INTO causes VALUES" +
+                "('Burning or stinging', 'Dermatologist')," +
+                "('Cracked skin', 'Dermatologist')," +
+                "('Dull ache (teeth)', 'Dentist')," +
+                "('Sharp pain (teeth)', 'Dentist')," +
+                "('Swelling in gums (teeth)', 'Dentist')," +
+                "('Throbbing (tooth)', 'Dentist')," +
+                "('Sensitivity (tooth)', 'Dentist')," +
+                "('Chest pain', 'Cardiologist')," +
+                "('Shortness of breath', 'Pulmonologist')," +
+                "('Discomfort in breathing', 'Pulmonologist')," +
+                "('Numbness', 'Neurologist')," +
+                "('Loss of feeling', 'Neurologist')," +
+                "('Electric shock sensations', 'Neurologist')," +
+                "('Weakness', 'General Physician')," +
+                "('Involuntary movements', 'Neurologist')," +
+                "('Slurred speech', 'Neurologist')," +
+                "('Memory loss', 'Neurologist')," +
+                "('Sleep problems', 'Psychiatrist')," +
+                "('Door blurring', 'Ophthalmologist')," +
+                "('Blurry nearby objects', 'Ophthalmologist')," +
+                "('Double vision', 'Ophthalmologist')," +
+                "('Fading of colors', 'Ophthalmologist')," +
+                "('Dim vision', 'Ophthalmologist')," +
+                "('Yellowing of skin and eyes', 'Hepatologist')," +
+                "('Abdominal pain', 'Gastroenterologist')," +
+                "('Stomach pain', 'Gastroenterologist')," +
+                "('Changes in stool and urine color', 'Gastroenterologist')," +
+                "('Increased thirst', 'Endocrinologist')," +
+                "('Frequent urination', 'Urologist')," +
+                "('Extreme hunger', 'Endocrinologist')," +
+                "('Running nose', 'ENT Specialist')," +
+                "('Nausea', 'General Physician')," +
+                "('Dizziness', 'Neurologist')," +
+                "('Muscle aches', 'Rheumatologist')," +
+                "('Fatigue', 'General Physician')," +
+                "('Cough', 'Pulmonologist')," +
+                "('Headache', 'Neurologist')," +
+                "('Sneezing', 'ENT Specialist')," +
+                "('Chills', 'General Physician')," +
+                "('Diarrhea', 'Gastroenterologist')," +
+                "('Sore throat', 'ENT Specialist')," +
+                "('Itching', 'Dermatologist')," +
+                "('Redness', 'Dermatologist')," +
+                "('Rash', 'Dermatologist')," +
+                "('Swelling', 'General Physician')," +
+                "('Bumps or blisters', 'Dermatologist')," +
+                "('Fever', 'General Physician')," +
+                "('Joint pain', 'Rheumatologist')," +
+                "('Weight loss', 'Endocrinologist')," +
+                "('Persistent sadness', 'Psychiatrist')," +
+                "('Guilt', 'Psychiatrist')," +
+                "('Loss of interest', 'Psychiatrist')," +
+                "('Changes in sleep', 'Psychiatrist')," +
+                "('Unusual sleep', 'Psychiatrist')," +
+                "('Burning and stinging', 'Dermatologist')," +
+                "('Climbed vision', 'Ophthalmologist')");
+        Toast.makeText(getApplicationContext(), "Inserted", Toast.LENGTH_LONG).show();
 
-//    }
-//
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-//    }
-//
-//
-//    @SuppressLint("NonConstantResourceId")
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//        if (id == R.id.login) {
-//            Intent intent = new Intent(MainActivity.this, log.class);
-//            startActivity(intent);
-//            return true;
-//        } else if (id == R.id.register) {
-//            Intent intent1 = new Intent(MainActivity.this, register.class);
-//            startActivity(intent1);
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-//
-//}
+
+        db = openOrCreateDatabase("db", MODE_PRIVATE, null);
+        db.execSQL("create table if not exists doctor (d_name varchar(250), hospital varchar(255), specialists varchar(250))");
+        db.execSQL("INSERT INTO doctor VALUES" +
+                "('Shifa Hospital', 'Dr.ARUN', 'Dermatologist')," +
+                "('Shifa Hospital', 'Dr.Surya', 'Dentist')," +
+                "('Shifa Hospital', 'Dr.Rajesh', 'Cardiologist')," +
+                "('Shifa Hospital', 'Dr.Yusuf', 'Neurologist')," +
+                "('Shifa Hospital', 'Dr.Anitha', 'Dentist')," +
+                "('Shifa Hospital', 'Dr.Reddy', 'Psychiatrist')," +
+                "('Shifa Hospital', 'Dr.Imthiyas', 'Opthamologist')," +
+                "('Shifa Hospital', 'Dr.Ramya', 'Urologist')," +
+                "('Shifa Hospital', 'Dr.Priya', 'General Physician')," +
+                "('Shifa Hospital', 'Dr.Rekha', 'ENT Specialist')," +
+                "('Shifa Hospital', 'Dr.Punitha', 'General Physician')," +
+                "('Shifa Hospital', 'Dr.Abishek', 'ENT Specialist')," +
+                "('Shifa Hospital', 'Dr.Suga', 'Endocrinologist')," +
+                "('Shifa Hospital', 'Dr.August D', 'Dermatologist')," +
+                "('Shifa Hospital', 'Dr.Inshaaf', 'General Physician')," +
+                "('Shifa Hospital', 'Dr.Sameer', 'Opthamologist')," +
+                "('Shifa Hospital', 'Dr.Gopal', 'Gastroenterologist')," +
+                "('Shifa Hospital', 'Dr.Vaishalini', 'Cardiologist')," +
+                "('Shifa Hospital', 'Dr.Nithya', 'Dentist')," +
+                "('Shifa Hospital', 'Dr.Barakath', 'Pulmonologist')," +
+                "('Lifeline Hospital', 'Dr.Keerthi', 'Dentist')," +
+                "('Lifeline Hospital', 'Dr.Roshan', 'Psychiatrist')," +
+                "('Lifeline Hospital', 'Dr.Harini', 'Cardiologist')," +
+                "('Lifeline Hospital', 'Dr.Sarfraz', 'Urologist')," +
+                "('Lifeline Hospital', 'Dr.Azees', 'Neurologist')," +
+                "('Lifeline Hospital', 'Dr.Ishaq', 'Dermatologist')," +
+                "('Lifeline Hospital', 'Dr.Sushmitha', 'ENT Specialist')," +
+                "('Lifeline Hospital', 'Dr.Sowmiya', 'General Physician')," +
+                "('Lifeline Hospital', 'Dr.Kavitha', 'Pulmonologist')," +
+                "('Lifeline Hospital', 'Dr.Karthika', 'Dentist')," +
+                "('Lifeline Hospital', 'Dr.IshaPrathan', 'Endocrinologist')," +
+                "('Lifeline Hospital', 'Dr.Safa', 'Psychiatrist')," +
+                "('Lifeline Hospital', 'Dr.Sathiyan', 'Opthamologist')," +
+                "('Lifeline Hospital', 'Dr.Nazeer', 'Rheumatologist')," +
+                "('Lifeline Hospital', 'Dr.Asokan', 'General Physician')," +
+                "('Lifeline Hospital', 'Dr.Abishek', 'Neurologist')," +
+                "('Lifeline Hospital', 'Dr.Indhu', 'Dermatologist')," +
+                "('Lifeline Hospital', 'Dr.Gopal', 'Dentist')," +
+                "('Lifeline Hospital', 'Dr.Yusuf', 'Cardiologist')," +
+                "('Lifeline Hospital', 'Dr.IshaPrathan', 'ENT Specialist')," +
+                "('Lifeline Hospital', 'Dr.Santhosh', 'Urologist')," +
+                "('Health Harbor', 'Dr.Nivetha', 'Psychiatrist')," +
+                "('Health Harbor', 'Dr.ARUN', 'Cardiologist')," +
+                "('Health Harbor', 'Dr.Surya', 'Dermatologist')," +
+                "('Health Harbor', 'Dr.Rajesh', 'Dentist')," +
+                "('Health Harbor', 'Dr.Yusuf', 'Opthamologist')," +
+                "('Health Harbor', 'Dr.Anitha', 'Neurologist')," +
+                "('Health Harbor', 'Dr.Reddy', 'Dentist')," +
+                "('Health Harbor', 'Dr.Imthiyas', 'General Physician')," +
+                "('Health Harbor', 'Dr.Ramya', 'ENT Specialist')," +
+                "('Health Harbor', 'Dr.Priya', 'Urologist')," +
+                "('Health Harbor', 'Dr.Rekha', 'Endocrinologist')," +
+                "('Health Harbor', 'Dr.Punitha', 'Gastroenterologist')," +
+                "('Health Harbor', 'Dr.Abishek', 'Neurologist')," +
+                "('Health Harbor', 'Dr.Naseefa', 'Psychiatrist')," +
+                "('Health Harbor', 'Dr.Suga', 'General Physician')," +
+                "('Health Harbor', 'Dr.August D', 'Dermatologist')," +
+                "('Health Harbor', 'Dr.Inshaaf', 'Cardiologist')," +
+                "('Health Harbor', 'Dr.Sameer', 'ENT Specialist')," +
+                "('Health Harbor', 'Dr.Gopal', 'Pulmonologist')," +
+                "('Health Harbor', 'Dr.Vaishalini', 'Rheumatologist')," +
+                "('Healing Hub', 'Dr.Nithya', 'Cardiologist')," +
+                "('Healing Hub', 'Dr.Barakath', 'ENT Specialist')," +
+                "('Healing Hub', 'Dr.Keerthi', 'Neurologist')," +
+                "('Healing Hub', 'Dr.Harini', 'Neurologist')," +
+                "('Healing Hub', 'Dr.Sarfraz', 'General Physician')," +
+                "('Healing Hub', 'Dr.Azees', 'Dermatologist')," +
+                "('Healing Hub', 'Dr.Ishaq', 'Cardiologist')," +
+                "('Healing Hub', 'Dr.Sushmitha', 'Dentist')," +
+                "('Healing Hub', 'Dr.Shalini', 'Rheumatologist')," +
+                "('Healing Hub', 'Dr.Jimin', 'General Physician')," +
+                "('Healing Hub', 'Dr.Ramachandran', 'Dermatologist')," +
+                "('Healing Hub', 'Dr.Ezhil', 'Dentist')," +
+                "('Healing Hub', 'Dr.Shyamala', 'Pulmonologist')," +
+                "('Healing Hub', 'Dr.Sujatha', 'Opthamologist')," +
+                "('Healing Hub', 'Dr.Sowmiya', 'Endocrinologist')," +
+                "('Healing Hub', 'Dr.Kavitha', 'ENT Specialist')," +
+                "('Healing Hub', 'Dr.Karthika', 'Rheumatologist')," +
+                "('Healing Hub', 'Dr.Safa', 'Pulmonologist')," +
+                "('Healing Hub', 'Dr.Sathiyan', 'Gastroenterologist')," +
+                "('Healing Hub', 'Dr.Nazeer', 'Opthamologist')");
+        Toast.makeText(getApplicationContext(), "Inserted", Toast.LENGTH_LONG).show();
+
+
+        db.execSQL("CREATE TABLE IF NOT EXISTS time_table (specialist varchar, time_slot varchar)");
+        db.execSQL("INSERT INTO time_table (specialist, time_slot) VALUES" +
+                "('Cardiologist', '9:00 AM')," +
+                "('Cardiologist', '10:30 AM')," +
+                "('Cardiologist', '11:30 AM')," +
+                "('Cardiologist', '2:00 PM')," +
+                "('Cardiologist', '3:30 PM')," +
+                "('Cardiologist', '5:00 PM')," +
+                "('Neurologist', '9:00 AM')," +
+                "('Neurologist', '10:30 AM')," +
+                "('Neurologist', '11:30 AM')," +
+                "('Neurologist', '2:00 PM')," +
+                "('Neurologist', '3:30 PM')," +
+                "('Neurologist', '5:00 PM')," +
+                "('Endocrinologist', '9:00 AM')," +
+                "('Endocrinologist', '10:30 AM')," +
+                "('Endocrinologist', '11:30 AM')," +
+                "('Endocrinologist', '2:00 PM')," +
+                "('Endocrinologist', '3:30 PM')," +
+                "('Endocrinologist', '5:00 PM')," +
+                "('Pulmonologist', '9:00 AM')," +
+                "('Pulmonologist', '10:30 AM')," +
+                "('Pulmonologist', '11:30 AM')," +
+                "('Pulmonologist', '2:00 PM')," +
+                "('Pulmonologist', '3:30 PM')," +
+                "('Pulmonologist', '5:00 PM')," +
+                "('Dentist', '10:00 AM')," +
+                "('Dentist', '11:00 AM')," +
+                "('Dentist', '3:00 PM')," +
+                "('Dentist', '4:00 PM')," +
+                "('Dentist', '6:30 PM')," +
+                "('Dermatologist', '10:00 AM')," +
+                "('Dermatologist', '11:00 AM')," +
+                "('Dermatologist', '3:00 PM')," +
+                "('Dermatologist', '4:00 PM')," +
+                "('Dermatologist', '6:30 PM')," +
+                "('Opthamologist', '10:00 AM')," +
+                "('Opthamologist', '11:00 AM')," +
+                "('Opthamologist', '3:00 PM')," +
+                "('Opthamologist', '4:00 PM')," +
+                "('Opthamologist', '6:30 PM')," +
+                "('General Physician', '9:00 AM')," +
+                "('General Physician', '10:30 AM')," +
+                "('General Physician', '1:00 PM')," +
+                "('General Physician', '2:30 PM')," +
+                "('General Physician', '4:00 PM')," +
+                "('General Physician', '6:00 PM')," +
+                "('ENT Speacialist', '9:00 AM')," +
+                "('ENT Speacialist', '10:30 AM')," +
+                "('ENT Speacialist', '1:00 PM')," +
+                "('ENT Speacialist', '2:30 PM')," +
+                "('ENT Speacialist', '4:00 PM')," +
+                "('ENT Speacialist', '6:00 PM')," +
+                "('Psychiatrist', '10:00 AM')," +
+                "('Psychiatrist', '11:30 AM')," +
+                "('Psychiatrist', '2:00 PM')," +
+                "('Psychiatrist', '3:30 PM')," +
+                "('Psychiatrist', '5:30 PM')," +
+                "('Rheumatologist', '10:00 AM')," +
+                "('Rheumatologist', '11:30 AM')," +
+                "('Rheumatologist', '2:00 PM')," +
+                "('Rheumatologist', '3:30 PM')," +
+                "('Rheumatologist', '5:30 PM')," +
+                "('Gastroenterologist', '8:30 AM')," +
+                "('Gastroenterologist', '9:45 AM')," +
+                "('Gastroenterologist', '11:00 AM')," +
+                "('Gastroenterologist', '1:30 PM')," +
+                "('Gastroenterologist', '3:00 PM')," +
+                "('Gastroenterologist', '5:00 PM')," +
+                "('Urologist', '8:30 AM')," +
+                "('Urologist', '9:45 AM')," +
+                "('Urologist', '11:00 AM')," +
+                "('Urologist', '1:30 PM')," +
+                "('Urologist', '3:00 PM')," +
+                "('Urologist', '5:00 PM')");
+
+        Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show();
+
+    }
+
+}
