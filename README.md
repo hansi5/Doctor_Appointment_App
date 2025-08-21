@@ -21,7 +21,6 @@ The app serves as a platform for patients to:
 - Dynamic time slot loading based on specialist availability
 - Real-time availability checks to prevent double bookings
 - Token generation for each confirmed appointment
-- SMS notification system for appointment confirmation
 - Profile editing and appointment cancellation options
 - Appointment status display: Upcoming or Met
 
@@ -33,7 +32,6 @@ The application is built using:
 - SharedPreferences for session management
 - XML-based UI with DatePicker, Spinner, and other Android components
 - Android Intent system for screen navigation
-- SMSManager for sending appointment details via SMS (with user permission)
 
 ## Database Design
 
@@ -63,7 +61,7 @@ The app uses a local SQLite database with the following key tables:
 ## Future Enhancements
 
 - Cloud-based database integration (e.g., Firebase, MySQL)
-- Email verification and password recovery
+- Email and sms verification and password recovery
 - Push notifications for appointment reminders
 - Multi-language support
 - Doctor-side interface for managing schedules
