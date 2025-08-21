@@ -6,6 +6,8 @@
     android:paddingVertical="50dp"
     android:paddingHorizontal="30dp"
     android:orientation="vertical"
+    android:textColor="@android:color/black"
+    android:textColorHint="#808080"
     android:gravity="center">
     <ScrollView
         android:layout_width="match_parent"
@@ -126,6 +128,7 @@
                 android:text="About"
                 android:textSize="22dp"
                 android:textStyle="bold"
+                android:textColor="#27445D"
                 android:layout_marginBottom="8dp"/>
             <TextView
                 android:id="@+id/hospitalAbout"
@@ -133,6 +136,7 @@
                 android:layout_height="wrap_content"
                 android:text="Healing Hub is a renowned hospital focusing on holistic treatments and advanced healthcare solutions. It combines traditional and modern medicine to ensure the best patient outcomes."
                 android:textSize="16dp"
+                android:textColor="#000000"
                 android:textAlignment="center"
                 android:layout_marginBottom="20dp"/>
 
@@ -141,6 +145,7 @@
                 android:layout_height="wrap_content"
                 android:text="Location"
                 android:textSize="22dp"
+                android:textColor="#27445D"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"/>
             <TextView
@@ -149,6 +154,7 @@
                 android:layout_height="wrap_content"
                 android:text="It combines traditional and modern medicine to ensure the best patient outcomes."
                 android:textSize="16dp"
+                android:textColor="#000000"
                 android:textAlignment="center"
                 android:layout_marginBottom="20dp"/>
 
@@ -157,6 +163,7 @@
                 android:layout_height="wrap_content"
                 android:text="Specialization"
                 android:textSize="22dp"
+                android:textColor="#27445D"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"/>
             <TextView
@@ -165,6 +172,7 @@
                 android:layout_height="wrap_content"
                 android:text="Gynecology\nOncology (Cancer Treatment)\nEndocrinology\nRheumatology."
                 android:textSize="16dp"
+                android:textColor="#000000"
                 android:lineHeight="25dp"
                 android:textAlignment="center"
                 android:layout_marginBottom="20dp"/>
@@ -175,6 +183,7 @@
                 android:text="Doctors"
                 android:textSize="22dp"
                 android:textStyle="bold"
+                android:textColor="#27445D"
                 android:layout_marginBottom="8dp"/>
             <TextView
                 android:id="@+id/hospitalDoc"
@@ -182,6 +191,7 @@
                 android:layout_height="wrap_content"
                 android:text="It combines traditional and modern medicine to ensure the best patient outcomes."
                 android:textSize="16dp"
+                android:textColor="#000000"
                 android:textAlignment="center"
                 android:layout_marginBottom="20dp"/>
 
@@ -191,6 +201,7 @@
                 android:text="Timings"
                 android:textStyle="bold"
                 android:textSize="22dp"
+                android:textColor="#27445D"
                 android:layout_marginBottom="8dp"/>
             <TextView
                 android:id="@+id/hospitalTime"
@@ -198,6 +209,7 @@
                 android:layout_height="wrap_content"
                 android:text="It combines traditional and modern medicine to ensure the best patient outcomes."
                 android:textSize="16dp"
+                android:textColor="#000000"
                 android:textAlignment="center"
                 android:layout_marginBottom="30dp"/>
             <Button
@@ -205,6 +217,7 @@
                 android:layout_height="wrap_content"
                 android:text="Back"
                 android:id="@+id/back2"
+                android:textColor="#ffffff"
                 android:backgroundTint="#27445D"
                 android:layout_gravity="center"/>
         </LinearLayout>

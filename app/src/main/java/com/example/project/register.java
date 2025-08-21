@@ -130,7 +130,7 @@ public class register extends AppCompatActivity {
                         "', " +  age + ",'" + sex + "', '" + email + "', '" + address
                         + "', '" + phone + "')");
 
-                Toast.makeText(getApplicationContext(), "inserted", Toast.LENGTH_LONG).show();
+
 
                 Intent intent = new Intent(register.this, log.class);
                 startActivity(intent);
